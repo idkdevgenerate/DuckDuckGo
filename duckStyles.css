@@ -1,0 +1,468 @@
+@font-face {
+    font-family: "PLZ";
+    src: url(fonts/PLZ/plz.ttf);
+  }
+@font-face {
+    font-family: "ProximaNova";
+    src: url(fonts/ProximaNovaReg.ttf);
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'ProximaNova';
+    --light-gray: rgb(204, 204, 204);
+    --gray: rgb(166, 166, 166);
+    --dark-gray: rgb(35, 36, 41);
+    --dark-brown: #4c4c4c;
+    --blue: #678fff;
+}
+body { 
+    position: relative;
+    display: grid;
+    overflow-x: hidden;
+    background-color: #f7f7f7;
+
+}
+.nav-container {
+    margin-right: 1rem;
+    margin-top: 0.85rem;
+    float:right;
+    display:flex;
+    justify-content: flex-end;
+}
+#megaphone { 
+    width: 1.5rem;
+    
+}
+
+#megaphone-chevron { 
+    position: relative;
+    top: 0.65rem;
+    padding-right: 2rem;
+    color:gray;
+
+}
+.only-megaphone-chevron-icons:hover { 
+    filter: brightness(-20%);
+    cursor:pointer;
+
+}
+/* MEGAPHONE MENU  */
+.megaphone-menu {
+    z-index: 2;
+    padding: 0.5rem;
+    position:absolute;
+    top: 80%;
+    right: 10%;
+    background-color:white;
+    box-shadow: 2px 0px 25px rgb(206, 206, 206);
+    width: 7rem;
+    visibility: hidden;
+}
+.megaphone-menu-visible {
+    visibility: visible;
+}
+.megaphone-menu ul {
+    list-style:none;
+    display:flex; 
+    flex-direction:column;
+}
+.megaphone-menu ul li {
+    display:flex;
+    padding: 0.5rem;
+}
+.megaphone-menu ul li img {
+    margin-right: 0.5rem;
+}
+.megaphone-menu ul li a {
+    text-decoration:none;
+    color: gray;
+    font-family: 'ProximaNova';
+}
+.megaphone-menu ul li:hover {
+    text-decoration: underline;
+}
+#hamburger { 
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding:0.3rem 0.7rem;
+    
+}
+#hamburger:hover {
+    background-color: rgb(103, 107, 116) ;
+    border-radius: 0.5rem;
+    color: white;
+}
+#hamburger:active { 
+    text-decoration: none;
+    color: black;
+}
+.nav-link { 
+    font-family: 'Proxima Nova';
+    font-size: 0.9rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    list-style: none;
+
+}
+.nav-links:hover { 
+    text-decoration: underline;
+    
+}
+.hamburger-links { 
+    position: absolute;
+    border: 2px solid rgb(183, 183, 183);
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    padding-left: 2rem;
+    background-color: white;
+    padding-right: 1rem;
+    transition: transform 175ms ease-in;
+}
+.hamburger-links-open {
+    transform: translateX(0);
+}
+.hamburger-links p { 
+    font-family: 'ProximaNova';
+    font-size: 0.7rem;
+    color: grey;
+    padding-bottom: 0.3rem;
+    padding-top: 3rem;
+    
+}
+.hamburger-links p:first-child {
+    padding-top: 1rem;
+}
+.hamburger-links ul li:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+.extra-bottom-margin {
+    margin-bottom: 2rem;
+}
+.settings-and-x { 
+    padding-top: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.X { 
+    font-size: 1.5rem;
+    color: var(--gray);
+    border: none;
+    background-color: white;
+}
+.X:hover {
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+.plz { 
+    font-family: 'PLZ';
+}
+
+.hero-container { 
+    width: 100vw;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+     /*==========*/
+/* HERO / LOGO / SEARCH */
+     /*==========*/
+.hero-container { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#duck-logo { 
+    width: 7.5rem;
+}
+#duck-logo:hover {
+    cursor:pointer;
+}
+#duck-duck-go {
+    font-family:'Raleway', sans-serif;
+    color: var(--dark-brown);
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#search-container {
+    margin-top: 2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    min-width: 650px;
+    height: 40px;
+    background-color:white;
+    border: 1px solid #d9d9d9;
+    box-shadow: 1px 0px 100px #f7f7f7;
+}
+#search-bar {
+    border: none;
+    width: 95%;
+    font-size: 1.05rem;
+    font-family:'ProximaNova', sans-serif;
+    padding-left: 1rem;
+}
+.search-bar:focus {
+    outline:none;
+}
+.fa-magnifying-glass {
+    padding-right: 1rem;
+}
+
+
+.roundish-btn { 
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: 'ProximaNova', sans-serif;
+    border: none; 
+    color: white; 
+    background-color: var(--blue);
+    padding: 0.9rem;
+    margin: auto;
+}
+
+
+
+
+
+/* TEXT AND CALL TO ACTION */
+.text-and-call-to-action {
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+}
+.text-and-call-to-action p { 
+    
+    width: 75%;
+    line-height: 3ch;
+    font-family: 'ProximaNova';
+    color: black;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2.3rem;
+    padding-top: 0.75rem;
+}
+.tired-of {
+    text-align: center;
+    margin-top: 2.25rem;
+    letter-spacing: 0.05rem;
+    font-weight: 100;
+    font-size: 2rem;
+    --mid-gray: 353748;
+    color: var(--mid-gray);
+    max-width: 90vw;
+    white-space: nowrap;
+}
+h4 {
+    margin-top: 4rem;
+    font-size: 1rem; 
+    text-align: center;
+    font-weight: 600;
+    font-family: 'ProximaNova';
+
+}
+
+/* =========== */
+   /* CARDS */
+/* =========== */
+.card-container {
+    display:flex; 
+    gap: 1.5%;
+    max-width: 65%;
+    align-items:center;
+    margin: 0 auto;
+
+}
+.card {
+    max-height: 50ch;
+    min-height: 25ch;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: white;
+    border-radius: 0.75rem;
+    width: 35ch; 
+    box-shadow: -1px 4px 13px 3px rgba(196, 196, 196, 0.25);
+    border: 1px solid #f7f7f7;
+}
+
+@media screen and (min-width: 961px) {
+    .card {
+        width: 45ch;
+    }
+}
+
+.card img {
+    padding-top: 2rem;
+    width: 35%;
+    padding-bottom: 2rem;
+
+}
+.card h5 {
+    width: 80%;
+    text-align:center;
+    font-size: 1.35rem;
+    font-weight: 100;
+    margin: 0;
+}
+.card p { 
+    margin:0;
+    font-family: 'ProximaNova';
+    line-height: 25px;
+    color: var(--dark-gray);
+    font-weight: 100;
+    padding: 0 10%;
+    padding-bottom: 10%;
+    word-wrap: break-word;
+    
+}
+.card p a { 
+    color: var(--blue);
+    text-decoration: none;
+}
+/* BELOW CARDS */
+.below-cards-container {
+    z-index: 1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+}
+.below-cards-container h2,.below-cards-container p {
+    margin-top: 1rem;
+    color: white;
+    width: 75%;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+.below-cards-container p {
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 2rem;
+}
+.orange-btn { 
+    background-color: #894431;
+    color:white;
+}
+.top-image { 
+    z-index: 10;
+}
+.container-for-orange {
+    position:relative;
+    background-image: url(images/OrangeCurve.svg);
+    background-size: cover;
+}
+
+
+/* ACCORDION */
+.accordion-top-title { 
+    margin-top: 3rem;
+    font-size: 2.25rem;
+    text-align:center;
+    font-weight: 100;
+}
+.accordion-container { 
+    margin-top: 3rem;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75ch;
+    max-width: 90vw;
+    z-index: 0;
+}
+.chevron-and-title { 
+    cursor: pointer;
+    display: flex; 
+    width: 100%;
+    border:none;
+    background-color: transparent;
+}
+.accordion-chevron {
+    font-size: 0.7rem;
+    align-self: center;
+    padding: 5px;
+    margin-right: 1rem;
+    background-color: var(--light-gray);
+    border-radius: 50%;
+}
+.accordion-title { 
+    font-family: 'ProximaNova';
+    color: rgb(68, 68, 68);
+    text-align:left;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+.single-capsule-accordion { 
+    display:flex;
+    flex-direction:column;
+    
+}
+.accordion-content { 
+    margin-top: 2rem;
+    font-family: 'ProximaNova', sans-serif;
+    line-height: 35px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.8s;
+
+}
+
+.accordion-content-visible {
+    max-height: 500px;
+}
+.single-capsule-accordion p a { 
+    color: var(--blue);
+    text-decoration: none;
+}
+.line { 
+    height: 1px; 
+    background-color: var(--light-gray);
+    margin: 1rem 0;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+/* Any screen skinnier than 950px */
+@media screen and (max-width: 950px){
+    .card-container {
+        flex-direction: column;
+    }
+    .scientist-image {
+        width: 100vw;
+    }
+    .container-for-orange {
+        position:relative;
+        background-image: none;
+        background-size: 900px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .below-cards-container {
+        padding-top: 5rem;
+        background-image: url(images/OrangeCurve.svg);
+        background-size: cover;
+        background-position: center;
+    }
+    .below-cards-container h2  {
+        font-size: 2rem;
+    }
+}

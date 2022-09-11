@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckDuckGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Livvic&family=Raleway&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/1b741eb7ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="duckStyles.css" />
+    <script defer src="duckScript.js"></script>
+  </head>
+  <body>
+
+    <!-- MEGAPHONE -->
+    <div class="nav-container">
+      <div id="megaphone-chevron">
+        <div class="only-megaphone-chevron-icons">
+          <img id="megaphone" src="images/GrayMyMegaphone.svg" alt="">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="megaphone-menu">
+          <ul>
+            <li><img src="/images/twitter.svg" alt="twitter icon"><a href="#">Twitter</a></li>
+            <li><img src="/images/reddit.svg" alt="reddit icon"><a href="#">Reddit</a></li>
+            <li><img src="/images/blog.svg" alt="blog icon"><a href="#">Blog</a></li>
+            <li><img src="/images/newsletter.svg" alt="newletter icon"><a href="#">Newletter</a></li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <!-- HAMBURGER -->
+      <a id="hamburger" href="#">&#9776</a>
+    </div>
+
+      <!-- HAMBURGER LINKS -->
+    <div class="hamburger-links" id="hamburger-links">
+      <div class="settings-and-x">
+        <p>SETTINGS</p>
+        <button class="X" id="X">
+          <i class="fa-solid fa-x"></i> 
+        </button>
+      </div>
+      <ul>
+        <li class="nav-link">Themes</li>
+        <li class="nav-link">All Settings</li>
+        <li class="nav-link">!Bang Search Shortcuts</li>
+      </ul>
+
+      <p>PRIVACY ESSENTIALS</p>
+      <ul>
+        <li class="nav-link">Private Search</li>
+        <li class="nav-link">App and Extension</li>
+      </ul>
+
+      <p>WHY PRIVACY</p>
+      <ul>
+        <li class="nav-link">Privacy Blog</li>
+        <li class="nav-link">Privacy Crash Course</li>
+        <li class="nav-link">Help Spread Privacy</li>
+      </ul>
+
+      <p>WHO ARE WE</p>
+      <ul>
+        <li class="nav-link">About Us</li>
+        <li class="nav-link">Privacy Policy</li>
+        <li class="nav-link">Careers</li>
+        <li class="nav-link">Press Kit</li>
+      </ul>
+
+      <p>KEEP IN TOUCH</p>
+      <ul>
+        <li class="nav-link">Twitter</li>
+        <li class="nav-link">Reddit</li>
+        <li class="nav-link extra-bottom-margin">Help</li>
+      </ul>
+    </div>
+
+    <div class="hero-container">
+    <img id="duck-logo" src="images/DuckDuckGoLogo.png" alt="" />
+    <p id="duck-duck-go">DuckDuckGo</p>
+
+    <div id="search-container">
+      <input id="search-bar" type="text" placeholder="Search the web without being tracked" class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      
+    </div>
+
+    <div class="text-and-call-to-action">
+      <h1 class="plz tired-of">Tired of being tracked online? We can help.</h1> 
+      <p> We don't store your personal info. We don't follow you around with ads. We don't track you. Ever.</p>
+      <button class="roundish-btn">Add DuckDuckGo To Browser</button>
+      <h4>Privacy Protection For Any Device</h4>
+    </div>
+  </div> 
+  <!-- END OF HERO CONTAINER -->
+
+  <div class="container-for-orange">
+
+  
+    <div class="card-container">
+
+      <div class="card">
+        <img src="images/birdOnComputer.svg" alt="">
+        <h5>Privacy Browser Extension</h5>
+        <p>Browse as usual, and we’ll take care of the rest. Get bundled private search, tracker blocking, and site encryption, all in one download, for <a href="#">major browsers</a></p>
+      </div>
+      
+      <div class="card">
+        <img src="images/magnifyingGlass.svg" alt="">
+        <h5>Private Search Engine</h5>
+        <p>Search privately with our app or extension, add private web search to your favorite browser, or search directly at <a href="#">duckduckgo.com.</a></p>
+      </div>
+      
+      <div class="card">
+        <img src="images/phone.svg" alt="">
+        <h5>Privacy Browser App</h5>
+        <p>Our private browser for mobile comes equipped with our search engine, tracker blocker, encryption enforcer, and more. Available on <a href="#">iOS & Android.</a></p>
+      </div>
+    </div>
+
+
+    <div class="below-cards-container">
+      <h2>We don’t store your
+        personal information. Ever.</h2>
+        <p>Our privacy policy is simple: we don’t collect
+          or share any of your personal information.</p>
+          <button class="roundish-btn orange-btn">Add DuckDuckGo to Browser</button>
+          <img class="top-image scientist-image" src="images/scientist.svg" alt="">
+    </div>
+    
+  
+
+  </div>
+  <!-- END OF ORANGE CONTAINER DIV -->
+
+    <!-- ACCORDION CONTENT  -->
+    <h5 class="accordion-top-title">Frequently Asked Questions</h5>
+    
+    <div class="accordion-container">
+      <div class="line"></div>
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">How does DuckDuckGo make money?</h6>
+        </button>
+        <p class="accordion-content">
+          We make our money from private ads on our search engine. On other search engines, ads are based on profiles compiled about you using your personal information like search, browsing, and purchase history. Since we don’t collect that information, search ads on DuckDuckGo are based on the search results page you are viewing, not on you as a person. For example, if you search for cars, we’ll show you ads about cars. <a href="#" >Learn more.</a>
+        </p>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">What does Google know about me?</h6>
+        </button>
+        <p class="accordion-content">
+          Not only does Google keep your search history forever by default, their trackers have been found on 75% of the top million websites, which means they are tracking most everywhere you go on the Internet (unless you stop them with DuckDuckGo!). And that’s just the tip of the iceberg.<a href="#" >Learn more.</a>
+        </p>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">Why use DuckDuckGo instead of Google?</h6>
+        </button>
+        <p class="accordion-content">
+          Ever notice ads constantly following you around? That’s in part because Google tracks your searches and hides trackers on millions of websites. By contrast, our private search engine doesn’t track your searches and our DuckDuckGo browser extension and mobile app block Google’s (and many other companies’) trackers across the Internet, helping to keep your browsing history more private, as it should be. And that’s just the beginning — by using DuckDuckGo you also escape the manipulation of the filter bubble and can use the Internet faster (after all that tracking code is disabled). Learn more.</p>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">How do DuckDuckGo search results compare to Google’s?</h6>
+        </button>
+        <p class="accordion-content">
+          DuckDuckGo search gives you truly private search results without tradeoffs in result quality. We have everything you’ve come to expect in an online search experience, and a few bonus features that make searching the Internet not only private, but also a bit more fun! And, on top of that, because there is no search history on DuckDuckGo, you escape the filter bubble of manipulated results. Learn more.<div class="line"></div>
+      </div>
+    </div>
+
+    
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">Is DuckDuckGo an “unfiltered” search engine?</h6>
+        </button>
+        <p class="accordion-content">
+          Unlike some other search engines, we don’t alter search results based on someone’s previous search history. In fact, since we don’t track our users we don’t have access to search histories at all! Those other search engines show you results based on a data profile about you and your online activity (including your search history), and so can be slanted towards what they think you will click on the most based on this profiling. This effect is commonly known as the search filter bubble, but using DuckDuckGo can help you escape it.
+         
+        <br>This does not mean our search results are generally “unfiltered” because, for every search you make online, a search engine’s job is to filter millions of possible results down to a ranked order of just a handful. In other words, a search engine has to use algorithms programmed by people to determine what shows up first in the list of results, what shows up second, and so on. Otherwise, for every search you’d just get a completely random set of results, which of course wouldn’t be very useful.
+        
+    </p>
+        <div class="line"></div>
+      </div>
+    </div>
+    
+
+
+
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">Is DuckDuckGo owned by Google?</h6>
+        </button>
+        <p class="accordion-content">
+          No, we are not and have never been owned by Google. We have been an independent company since our founding in 2008 and, unlike some other search engines, we don’t rely on Google’s results for any of our search results. You may notice that we offer a Google Chrome extension and a Google Android app, but these are also not in partnership with Google and actually aim to protect you from Google’s online trackers.</p>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">What’s the difference between using DuckDuckGo and Incognito mode?</h6>
+        </button>
+        <p class="accordion-content">
+          It is a myth that you can’t be tracked while using so-called “Incognito” mode. In fact, Incognito mode mainly just deletes information on your computer and does nothing to stop Google from saving your searches, nor does it stop companies, Internet service providers, or governments from being able to track you across the Internet. By contrast, DuckDuckGo search is completely anonymous and if you add our app & extension on top, we help keep you private when browsing off of search results. Learn more.</p>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">How popular is DuckDuckGo?</h6>
+        </button>
+        <p class="accordion-content">
+          We don’t track our users, so it’s actually impossible for us to know how many users in total are using our products. However, we are able to make an estimate based on the number of searches we get per month, which we make public. Our best guess — over 50 million people! Learn more.</p>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+    <div class="accordion-container">
+      <div class="single-capsule-accordion">
+        <button class="chevron-and-title">
+          <i class="fa-solid fa-chevron-down accordion-chevron"></i>
+          <h6 class="accordion-title">How does the DuckDuckGo app & extension work?</h6>
+        </button>
+        <p class="accordion-content">
+          The DuckDuckGo Privacy Browser mobile app and Privacy Essentials desktop extension both come with our best-in-class tracker blocker, encryption enforcer, and private search engine – all in one simple package. This gives you all the key privacy protection tools to search and browse privately, curbing the constant monitoring of your Internet activity by companies like Google and Facebook. Learn more.</p>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+</html>
